@@ -18,6 +18,7 @@ grid = [[0, 1, 0, 0, 0, 0],
         [0, 1, 0, 0, 0, 0],
         [0, 1, 0, 0, 0, 0],
         [0, 0, 0, 0, 1, 0]]
+
 heuristic = [[9, 8, 7, 6, 5, 4],
              [8, 7, 6, 5, 4, 3],
              [7, 6, 5, 4, 3, 2],
@@ -87,4 +88,8 @@ def search(grid,init,goal,cost,heuristic):
                             
     return expand
 
-print search(grid,init,goal,cost,heuristic)
+result = search(grid,init,goal,cost,heuristic)
+
+for el in result:
+	print (el)
+
